@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin="" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.css">
+    </link>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.Default.css">
+    </link>
+    <link rel="stylesheet" href="css/all.css">
+    <title>Face Mask Map</title>
+</head>
+
+<body>
+    <div class="InfoAndResult">
+        <div class="WeekInfoAndSearchBar">
+            <div class="WeekInfo">
+                <p class="DayOfWeek">星期<span></span></p>
+                <div class="DateAndWhoCanBuy">
+                    <p class="Date"></p>
+                    <p class="WhoCanBuy">身分證末碼為<em></em>可購買</p>
+                </div>
+            </div>
+            <div class="SearchBar">
+                <input type="text" placeholder="搜尋區域,地址,藥局名稱">
+                <a href="#" onclick="SearchStore()"><img src="https://upload.cc/i1/2022/06/05/us95LN.png" alt="#"
+                        style="width: 20px; height: 20px;"></a>
+            </div>
+        </div>
+        <div class="Result" style="font-size: 12px;">
+            <!-- <div class="Store" style="height: 90px;">
+                <p class="StoreName" style="font-size: 14px;">富山藥局</p>
+                <p class="StoreAddress">114台北市內湖區麗山街364巷2號</p>
+                <p class="StorePhone">02 2799 6446</p>
+                <div class="FaceMaskNum">
+                    <div class="FaceMaskFrame"
+                        style="font-size: 10px; width: 44%; height: 24px; background-color: #73C0D8;">成人口罩<span
+                            style="font-size: 14px;">20</span></div>
+                    <div class="FaceMaskFrame"
+                        style="font-size: 10px; width: 44%; height: 24px; background-color: #FFA573;">兒童口罩<span
+                            style="font-size: 14px;">50</span></div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        crossorigin=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster.js"></script>
+    <script src="js/all.js"></script>
+</body>
+
+</html>
